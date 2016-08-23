@@ -1,0 +1,13 @@
+.wrapper {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  border: 1px solid limegreen;
+  display: inline-block;
+  box-sizing: border-box;
+}
