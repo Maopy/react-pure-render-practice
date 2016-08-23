@@ -1,12 +1,14 @@
-# 测试 Immutable 对 React Component 组件 re render 性能的优化
+# 测试 Immutable 对 re render 性能的优化
 
 ## 观察测试结果
 
-> $ git clone git@github.com:Maopy/react-pure-render-practice.git
 >
-> $ npm install
+>  $ git clone git@github.com:Maopy/react-pure-render-practice.git
 >
-> $ npm start
+>  $ npm install
+>
+>  $ npm start
+>
 
 ## 测试内容
 
