@@ -56,3 +56,17 @@
 ```
 
 正确的只 re render 了改变的子属性
+
+## 总结 Immutable 的作用
+
+1. 防止 state 值不变时的 re render
+
+2. 防止原生对象在进行 pure 优化时, 无法 re render 深层子组件
+
+3. 在进行一般 re render 时, 也更加迅速
+
+## 坑 List
+
+1. 线上使用的 `react-immutable-render-mixin` 有严重 BUG, 并未起任何作用, 具体原因待查 FUCK!!!
+
+2. 当 props 中有函数, 且调用时写了 .bind(this), 这样函数执行时每次引用都会修改, pure 失效, 建议使用 EventEmitter 代替函数 props
