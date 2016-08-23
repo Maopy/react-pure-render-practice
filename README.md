@@ -2,13 +2,13 @@
 
 ## 观察测试结果
 
->
->  $ git clone git@github.com:Maopy/react-pure-render-practice.git
->
->  $ npm install
->
->  $ npm start
->
+```bash
+  $ git clone git@github.com:Maopy/react-pure-render-practice.git
+
+  $ npm install
+
+  $ npm start
+```
 
 ## 测试内容
 
