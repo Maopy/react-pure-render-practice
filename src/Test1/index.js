@@ -1,10 +1,10 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import '../App.css'
 
 import Foo from './Foo'
 import Bar from './Bar'
 
-class Test1 extends PureComponent {
+class Test1 extends Component {
   state = {
     vanilla: {
       foo: {
@@ -16,14 +16,9 @@ class Test1 extends PureComponent {
   }
   
   handleClick = () => {
+    let vanilla = this.state.vanilla
     this.setState({
-      vanilla: {
-        foo: {
-          bar1: 1,
-          bar2: Math.round(Math.random() * 9 + 1)
-        },
-        bar3: 3
-      }
+      vanilla
     })
   }
 
