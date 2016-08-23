@@ -10,6 +10,8 @@
   $ npm start
 ```
 
+或直接访问 [https://maopy.github.io/react-pure-render-practice/](https://maopy.github.io/react-pure-render-practice/)
+
 ## 测试内容
 
 1. 对未经 Pure 优化的 Component 进行数据未改变的赋值
