@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 import { fromJS } from 'immutable'
-import immutableRenderDecorator from '../immutableRenderDecorator'
+// import immutableRenderDecorator from '../immutableRenderDecorator'
+import shouldComponentUpdate from '../shouldComponentUpdate'
 import '../App.css'
 
 import Foo from './Foo'
 import Bar from './Bar'
 
-class Test3 extends Component {
+class Test4 extends Component {
+  constructor (props) {
+    super(props)
+    this.shouldComponentUpdate = shouldComponentUpdate.bind(this)
+  }
+  
   state = {
     data: fromJS({
       foo: {
@@ -35,4 +41,4 @@ class Test3 extends Component {
   }
 }
 
-export default immutableRenderDecorator(Test3)
+export default Test4
